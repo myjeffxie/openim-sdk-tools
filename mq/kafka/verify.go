@@ -17,8 +17,9 @@ package kafka
 import (
 	"context"
 	"fmt"
+
 	"github.com/IBM/sarama"
-	"github.com/openimsdk/tools/errs"
+	"github.com/myjeffxie/openim-sdk-tools/errs"
 )
 
 func Check(ctx context.Context, conf *Config, topics []string) error {

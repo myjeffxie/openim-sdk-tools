@@ -16,8 +16,9 @@ package mongoutil
 
 import (
 	"context"
-	"github.com/openimsdk/tools/db/tx"
-	"github.com/openimsdk/tools/errs"
+
+	"github.com/myjeffxie/openim-sdk-tools/db/tx"
+	"github.com/myjeffxie/openim-sdk-tools/errs"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

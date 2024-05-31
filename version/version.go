@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/openimsdk/tools/errs"
+	"github.com/myjeffxie/openim-sdk-tools/errs"
 	"gopkg.in/src-d/go-git.v4"
 )
 

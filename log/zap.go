@@ -17,14 +17,15 @@ package log
 import (
 	"context"
 	"fmt"
-	"github.com/openimsdk/tools/utils/stringutil"
 	"os"
 	"path/filepath"
 	"time"
 
+	"github.com/myjeffxie/openim-sdk-tools/utils/stringutil"
+
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
+	"github.com/myjeffxie/openim-sdk-tools/mcontext"
 	"github.com/openimsdk/protocol/constant"
-	"github.com/openimsdk/tools/mcontext"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

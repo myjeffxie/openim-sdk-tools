@@ -17,17 +17,18 @@ package mw
 import (
 	"context"
 	"fmt"
-	"github.com/openimsdk/tools/checker"
-	"github.com/pkg/errors"
 	"math"
 	"runtime"
 	"strings"
 
+	"github.com/myjeffxie/openim-sdk-tools/checker"
+	"github.com/pkg/errors"
+
+	"github.com/myjeffxie/openim-sdk-tools/errs"
+	"github.com/myjeffxie/openim-sdk-tools/log"
+	"github.com/myjeffxie/openim-sdk-tools/mw/specialerror"
 	"github.com/openimsdk/protocol/constant"
 	"github.com/openimsdk/protocol/errinfo"
-	"github.com/openimsdk/tools/errs"
-	"github.com/openimsdk/tools/log"
-	"github.com/openimsdk/tools/mw/specialerror"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"

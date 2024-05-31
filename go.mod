@@ -1,4 +1,4 @@
-module github.com/openimsdk/tools
+module github.com/myjeffxie/openim-sdk-tools
 
 go 1.20
 

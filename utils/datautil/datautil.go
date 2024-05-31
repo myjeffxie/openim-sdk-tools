@@ -16,9 +16,9 @@ package datautil
 
 import (
 	"github.com/jinzhu/copier"
-	"github.com/openimsdk/tools/db/pagination"
-	"github.com/openimsdk/tools/errs"
-	"github.com/openimsdk/tools/utils/jsonutil"
+	"github.com/myjeffxie/openim-sdk-tools/db/pagination"
+	"github.com/myjeffxie/openim-sdk-tools/errs"
+	"github.com/myjeffxie/openim-sdk-tools/utils/jsonutil"
 	"reflect"
 	"sort"
 )

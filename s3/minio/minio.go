@@ -18,8 +18,6 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/minio/minio-go/v7"
-	"github.com/openimsdk/tools/s3"
 	"io"
 	"net/http"
 	"net/url"
@@ -31,10 +29,13 @@ import (
 	"time"
 	"unsafe"
 
+	"github.com/minio/minio-go/v7"
+	"github.com/myjeffxie/openim-sdk-tools/s3"
+
 	"github.com/minio/minio-go/v7/pkg/credentials"
 	"github.com/minio/minio-go/v7/pkg/signer"
-	"github.com/openimsdk/tools/errs"
-	"github.com/openimsdk/tools/log"
+	"github.com/myjeffxie/openim-sdk-tools/errs"
+	"github.com/myjeffxie/openim-sdk-tools/log"
 )
 
 const (
