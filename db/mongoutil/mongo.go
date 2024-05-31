@@ -40,6 +40,7 @@ type Config struct {
 	Password    string
 	MaxPoolSize int
 	MaxRetry    int
+	AuthSource  string
 }
 
 type Client struct {
@@ -60,7 +61,16 @@ func NewMongoDB(ctx context.Context, config *Config) (*Client, error) {
 	if err := config.ValidateAndSetDefaults(); err != nil {
 		return nil, err
 	}
-	opts := options.Client().ApplyURI(config.Uri).SetMaxPoolSize(uint64(config.MaxPoolSize))
+
+	credential := options.Credential{
+		Username: config.Username,
+		Password: config.Password,
+	}
+	if config.AuthSource != "" {
+		credential.AuthSource = config.AuthSource
+	}
+
+	opts := options.Client().ApplyURI(config.Uri).SetMaxPoolSize(uint64(config.MaxPoolSize)).SetAuth(credential)
 	var (
 		cli *mongo.Client
 		err error

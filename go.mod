@@ -1,8 +1,6 @@
 module github.com/openimsdk/tools
 
-go 1.21
-
-toolchain go1.21.8
+go 1.20
 
 require (
 	github.com/IBM/sarama v1.43.0
